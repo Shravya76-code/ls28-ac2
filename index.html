@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error Handling in JS</title>
+    </head>
+
+    <body>
+        <h2>Error handing </h2>
+
+        <p id="result"></p>
+
+        <script>
+            try {
+                var numerator = 39;
+                var denominator = 0;
+
+                if (denominator==0)  {
+                    throw "You cant divide any number by 0!";
+                }
+
+                var answer = numerator/ denominator;
+                document.getElementById("result").innerHTML="Answer is: " + answer;
+
+            
+            } catch (err) {
+                // Show the error message
+                document.getElementById("result").innerHTML = "Error:" + err;
+            }
+        </script>
+    </body>
+</html>
